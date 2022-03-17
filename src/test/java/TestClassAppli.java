@@ -102,12 +102,15 @@ static WebDriver wd;
             eyes.check(Target.window().fully().withName("Home page"));
 
             initLogin();
+            Thread.sleep(3000);
             eyes.check(Target.window().fully().withName("Login page"));
             Thread.sleep(3000);
             fillLoginForm("2022jamesbond2022@gmail.com", "Credentials1988!~");
+            Thread.sleep(3000);
             eyes.check(Target.window().fully().withName("Login form"));
             Thread.sleep(3000);
             submitLogin();
+            Thread.sleep(3000);
             eyes.check(Target.window().fully().withName("Account page"));
             // webDriver.findElement(By.id("log-in")).click();
             // Check the app page
